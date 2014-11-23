@@ -382,7 +382,7 @@ my $too_easy = [
     [ 'oud'       => 'old' ],
     [ 'vrij'      => 'free' ],
     [ 'half'      => 'half' ],
-    [ 'bier'      => 'bier' ],
+    [ 'bier'      => 'beer' ],
 ];
 
 sub pick_a_card {
