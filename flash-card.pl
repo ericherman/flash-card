@@ -2,24 +2,6 @@
 use strict;
 use warnings;
 
-sub pick_a_card {
-    my ( $cards, $idx ) = @_;
-
-    $idx //= int( rand(2) );
-
-    my $card_num = int( rand( scalar @$cards ) );
-    my $card     = $cards->[$card_num];
-    my $from     = $card->[ !!$idx ];               # force to idx 0 or 1
-    my $to       = $card->[ !$idx ];                # force to idx 0 or 1
-
-    print "Translate: \"$from\"\n";
-    my $line = readline(*STDIN);
-    chomp $line;
-    print "$to\n";
-    my $error = ( $line eq $to ) ? 0 : 1;
-    exit $error;
-}
-
 my $sentences = [
     [ 'Ik ben een student.'          => 'I am a student.' ],
     [ 'Jij bent een student.'        => 'You are a student.' ],
@@ -395,6 +377,24 @@ my $too_easy = [
     [ 'vrij'      => 'free' ],
     [ 'half'      => 'half' ],
 ];
+
+sub pick_a_card {
+    my ( $cards, $idx ) = @_;
+
+    $idx //= int( rand(2) );
+
+    my $card_num = int( rand( scalar @$cards ) );
+    my $card     = $cards->[$card_num];
+    my $from     = $card->[ !!$idx ];               # force to idx 0 or 1
+    my $to       = $card->[ !$idx ];                # force to idx 0 or 1
+
+    print "Translate: \"$from\"\n";
+    my $line = readline(*STDIN);
+    chomp $line;
+    print "$to\n";
+    my $error = ( $line eq $to ) ? 0 : 1;
+    exit $error;
+}
 
 my $rnd = int( rand(100) );
 if ( $rnd < 50 ) {
