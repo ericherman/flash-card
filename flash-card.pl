@@ -41,6 +41,8 @@ my $sentences = [
     [ 'Met je ogen kun je zien.'     => 'With your eyes you can see.' ],
     [ 'Ik werk in dit bedrijf.'      => 'I work in this company.' ],
     [ 'Ik werk in dit gebouw.'       => 'I work in this building.' ],
+    [ 'Ik ben bij dit bedrijf.'      => "I'm in this company." ],
+    [ 'Ik werk voor dit bedrijf.'    => 'I work for this company.' ],
     [ 'De deur is open.'             => 'The door is open.' ],
     [ 'De deur is dicht.'            => 'The door is closed.' ],
     [ 'Ik heet Eric'                 => 'I am called Eric.' ],
@@ -60,7 +62,7 @@ my $sentences = [
     [ 'Deze plaats heet Eemnes.'     => 'This place is called Eemnes.' ],
     [
         'De man heeft anderen kleren dan de vrouw.' =>
-          'The man has different clothing than the woman.'
+          'The man has different clothes than the woman.'
     ],
     [ 'Zij is blij.'   => 'She is happy.' ],
     [ 'zij is alleen.' => 'She is alone.' ],
@@ -69,7 +71,7 @@ my $sentences = [
           'There are a number of people on the couch.'
     ],
     [ 'Zij weet het antwoord.'      => 'She knows the answer.' ],
-    [ 'De vrouw is na de man.'      => 'The woman after the man.' ],
+    [ 'De vrouw is na de man.'      => 'The woman is after the man.' ],
     [ 'De taart is zoet.'           => 'The cake is sweet.' ],
     [ 'De citroen is zuur.'         => 'The lemon is sour.' ],
     [ 'De soep is te zout.'         => 'The soup is too salty.' ],
@@ -99,11 +101,15 @@ my $sentences = [
           'It is cold. Therefor she has a coat on.'
     ],
     [ 'Hij gaat. Zij blift.'          => 'He goes. She stays.' ],
-    [ 'Goed eten is belangrijk.'      => 'Good eating is important.' ],
+    [ 'Goed eten is belangrijk.'      => 'Good food is important.' ],
     [ 'De jongen is bang'             => 'The boy is afraid.' ],
     [ 'De vrouw staat in het midden.' => 'The woman stands in the middle.' ],
     [ 'De man vindt het jammer.'      => 'The man finds it a bummer.' ],
+    [ 'De man is teleurgesteld.'      => 'The man is disappointed.' ],
     [ 'De vrouw is klaar met werken.' => 'The woman is done with work.' ],
+    [ 'Ik zal me even voorstellen.'    => "I'll introduce myself." ],
+
+    [ 'Ik kan me dat moeilijk voorstellen.' => 'I find that hard to imagine.' ],
 ];
 
 # TODO: make sentences with these
@@ -134,7 +140,7 @@ my $other_vocab = [
     [ 'licht'       => 'light' ],
     [ 'zwaar'       => 'heavy' ],
     [ 'hangen'      => 'hang' ],
-    [ 'bellen'      => 'call' ],
+    [ 'bellen'      => 'call' ],            #literally "to ring (a bell)"
     [ 'rijden'      => 'drive' ],
     [ 'kopen'       => 'buy' ],
     [ 'betalen'     => 'pay' ],
@@ -149,14 +155,14 @@ my $other_vocab = [
     [ 'moe'         => 'tired' ],
     [ 'lachen'      => 'laugh' ],
     [ 'wassen'      => 'wash' ],
-    [ 'voetballen'  => 'play football' ],
+    [ 'voetballen'  => 'play soccer' ],
     [ 'dubbel'      => 'double' ],
     [ 'spelen'      => 'play' ],
     [ 'spellen'     => 'spell' ],
     [ 'spreken'     => 'speak' ],
     [ 'vroeger'     => 'former' ], # or as a noun 'the past'
     [ 'nu'          => 'now' ],
-    [ 'moelijk'     => 'hard' ],
+    [ 'moelijk'     => 'difficult' ],
     [ 'makkelijk'   => 'easy' ],
     [ 'vandaag'     => 'today' ],
     [ 'morgen'      => 'tomorrow' ],
@@ -179,26 +185,28 @@ my $other_vocab = [
     [ 'voorstellen aan' => 'introduce' ], # transitive
     [ 'voorstellen' => 'propose' ],
     [ 'printen'     => 'print' ],
-    [ 'trekken'     => 'drag' ], # or pull
+    [ 'slepen'      => 'drag' ],
+    [ 'trekken'     => 'pull' ],
     [ 'kiezen'      => 'choose' ],
     [ 'een beetje'  => 'a bit' ],
     [ 'hetzelfde'   => 'same' ], # or dezelfde
     [ 'anders'      => 'different' ],
     [ 'nat'         => 'wet' ],
-    [ 'roepen'      => 'call' ],
+    [ 'roepen'      => 'holler' ],
     [ 'hier'        => 'here' ],
     [ 'daar'        => 'daar' ],
     [ 'gek'         => 'crazy' ],
     [ 'normaal'     => 'normal' ],
     [ 'zoeken'      => 'search' ],
-    [ 'bedenken'    => 'contemplate' ],
+    [ 'bedenken'    => 'make up' ],
+    [ 'mijmeren'    => 'contemplate' ],
     [ 'koken'       => 'cook' ],
     [ 'koeken'      => 'cookies' ],
 ];
 
 my $het_de = [
     [ 'het lichaam'     => 'the body' ],
-    [ 'de buik'         => 'the stomach' ],
+    [ 'de buik'         => 'the stomach' ],   # literally: belly. "maag" is literally stomach (that part of the digestive tract)
     [ 'de rug'          => 'the back' ],
     [ 'het been'        => 'the leg' ],
     [ 'de arm'          => 'the arm' ],
@@ -236,7 +244,7 @@ my $het_de = [
     [ 'de potlood'      => 'the pencil' ],
     [ 'de gum'          => 'the eraser' ],
     [ 'de map'          => 'the folder' ],
-    [ 'het plaatje'     => 'the plack' ],
+    [ 'het plaatje'     => 'the image' ],
     [ 'het rondje'      => 'the little circle' ],
     [ 'het kruisje'     => 'the little x' ],
     [ 'de lijn'         => 'the line' ],
@@ -332,7 +340,7 @@ my $het_de = [
     [ 'de winkel'       => 'the store' ],
     [ 'de verkoper'     => 'the seller' ],
     [ 'de prijs'        => 'the price' ],
-    [ 'de boodschappen' => 'the shopping' ],
+    [ 'de boodschappen' => 'the groceries' ],
     [ 'de pijn'         => 'the pain' ],
     [ 'de buurt'        => 'the neighborhood' ],
     [ 'de stad'         => 'the city' ],
@@ -343,10 +351,10 @@ my $het_de = [
     [ 'de sport'        => 'the sport' ],
     [ 'de toets'        => 'the test' ],
     [ 'de klas'         => 'the class' ],
-    [ 'de juf'          => 'the teacher' ],
+    [ 'de juf'          => 'the teacher' ],       # "juf" is female teacher. The male equivalent would be "meester" (master)
     [ 'de les'          => 'the lesson' ],
     [ 'de school'       => 'the school' ],
-    [ 'het land'        => 'the country' ],
+    [ 'het land'        => 'the country' ],       # could also be "the land" (as an area, not a particular country)
     [ 'de wereld'       => 'the world' ],
     [ 'het slot'        => 'the lock' ],
     [ 'de tent'         => 'the tent' ],
@@ -422,3 +430,24 @@ else {
 }
 
 pick_a_card( $deck, $from_english );
+
+# ----------
+# notes
+# ----------
+#
+# Roland points out:
+# 'beneden' Depends, could be either down, below, beneath, downstairs depending on specific sentence.
+#
+# as a verb, typen is to type. But typen could also be the plural of type as in kind, so "types" in English.
+#
+# I'm never sure about "sick", that could mean you have to throw up right? I'd probably translate with "ill", but maybe that is too grave.
+#
+# I think there is literal translation for clothing, which would be "kledij" which is a rather archaic word.
+#
+# gek could be many things "odd","funny" (not haha), "cool" (as in, hip)
+#
+# bedenken is when you invent something in your mind, to make up
+#
+# careful :) depending on context, "stuk" could mean a goodlooking woman ("Kijk dat stuk eens!"), or a euphemism for penis. ("Mijn stuk staat op scherp")
+#
+# typically groceries. But literally, boodschappen are messages. Some room for confusion: "Ik heb een belangrijke boodschap" -> "I have an important message". "Ik moet even een boodschap doen" -> "I need to do some shopping". "Ik moet een grote boodschap doen" -> "I need to do a number two."
