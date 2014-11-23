@@ -396,17 +396,22 @@ sub pick_a_card {
     exit $error;
 }
 
+my $deck;
+my $from_english = undef;
+
 my $rnd = int( rand(100) );
 if ( $rnd < 50 ) {
-    pick_a_card($sentences);
+    $deck = $sentences;
 }
 elsif ( $rnd < 80 ) {
-    pick_a_card($other_vocab);
+    $deck = $other_vocab;
 }
 elsif ( $rnd < 95 ) {
-    my $from_english = 1;
-    pick_a_card( $het_de, $from_english );
+    $from_english = 1;
+    $deck         = $het_de;
 }
 else {
-    pick_a_card($too_easy);
+    $deck = $too_easy;
 }
+
+pick_a_card( $deck, $from_english );
