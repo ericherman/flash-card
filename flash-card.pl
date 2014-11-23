@@ -393,7 +393,14 @@ my $too_easy = [
     [ 'half'      => 'half' ],
 ];
 
-pick_a_card($sentences);
-pick_a_card($other_vocab);
-my $from_english = 1;
-pick_a_card( $het_de, $from_english );
+my $rnd = int( rand(10) );
+if ( $rnd < 5 ) {
+    pick_a_card($sentences);
+}
+elsif ( $rnd < 8 ) {
+    pick_a_card($other_vocab);
+}
+else {
+    my $from_english = 1;
+    pick_a_card( $het_de, $from_english );
+}
