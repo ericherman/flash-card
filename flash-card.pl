@@ -14,7 +14,10 @@ sub pick_a_card {
 
     print "Translate: \"$from\"\n";
     my $line = readline(*STDIN);
+    chomp $line;
     print "$to\n";
+    my $error = ( $line eq $to ) ? 0 : 1;
+    exit $error;
 }
 
 my $sentences = [
@@ -393,14 +396,17 @@ my $too_easy = [
     [ 'half'      => 'half' ],
 ];
 
-my $rnd = int( rand(10) );
-if ( $rnd < 5 ) {
+my $rnd = int( rand(100) );
+if ( $rnd < 50 ) {
     pick_a_card($sentences);
 }
-elsif ( $rnd < 8 ) {
+elsif ( $rnd < 80 ) {
     pick_a_card($other_vocab);
 }
-else {
+elsif ( $rnd < 95 ) {
     my $from_english = 1;
     pick_a_card( $het_de, $from_english );
+}
+else {
+    pick_a_card($too_easy);
 }
