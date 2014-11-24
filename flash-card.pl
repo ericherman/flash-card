@@ -110,15 +110,22 @@ my $sentences = [
     [ 'Ik zal me even voorstellen.'    => "I'll introduce myself." ],
 
     [ 'Ik kan me dat moeilijk voorstellen.' => 'I find that hard to imagine.' ],
+	 
+	 [ 'De trein is geel en blauw.' => 'The train is yellow and blue.' ],
+	 [ 'De regenboog heeft zeven kleuren' => 'The rainbow has seven colors.' ],
+	 
+	 [ 'De bol is rond.' => 'The sphere is round.' ],
+	 [ 'Honderd is een rond getal.' => 'Hundred is a round number.' ],
+	 [ 'Het plan is rond.' => 'The plan is squared away.' ],
+	 [ 'De mensen zitten rond het vuur.' => 'The people sit around the fire.' ],
+	 
+	 [ 'De lijn is recht.' => 'The line is straight.' ],
+	 [ 'Deze hoek is recht.' => 'This is a right angle.' ],
+	 [ 'Het recht in eigen hand nemen.' => 'Taking the law in their own hands.' ],
 ];
 
 # TODO: make sentences with these
 my $other_vocab = [
-    [ 'kleuren'     => 'colors' ],
-    [ 'blauw'       => 'blue' ],
-    [ 'rond'        => 'round' ],
-    [ 'recht'       => 'straight' ],
-    [ 'kaal'        => 'bald' ],
     [ 'fout'        => 'wrong' ],
     [ 'meer'        => 'more' ],
     [ 'min'         => 'minus' ],
@@ -217,7 +224,6 @@ my $het_de = [
     [ 'de bus'          => 'the bus' ],
     [ 'de fiets'        => 'the bicycle' ],
     [ 'de boot'         => 'the boat' ],
-    [ 'de trein'        => 'the train' ],
     [ 'het oog'         => 'the eye' ],
     [ 'het hoofd'       => 'the head' ],
     [ 'de neus'         => 'the nose' ],
