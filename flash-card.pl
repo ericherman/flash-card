@@ -206,7 +206,8 @@ my $other_vocab = [
 
 my $het_de = [
     [ 'het lichaam'     => 'the body' ],
-    [ 'de buik'         => 'the stomach' ],   # literally: belly. "maag" is literally stomach (that part of the digestive tract)
+    [ 'de buik'         => 'the belly' ],
+    [ 'de maag'         => 'the stomach' ],   # part of the digestive tract
     [ 'de rug'          => 'the back' ],
     [ 'het been'        => 'the leg' ],
     [ 'de arm'          => 'the arm' ],
