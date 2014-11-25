@@ -122,6 +122,12 @@ my $sentences = [
 	 [ 'De lijn is recht.' => 'The line is straight.' ],
 	 [ 'Deze hoek is recht.' => 'This is a right angle.' ],
 	 [ 'Het recht in eigen hand nemen.' => 'Taking the law in their own hands.' ],
+	 [ 'Het glas is half leeg.' => 'The glass is half empty.' ],
+	 [ 'Het glas is half vol.' => 'The glass is half full.' ],
+	 
+	 [ 'Hij kan in het donker niet zien.' => "He can't see in the dark." ],
+	 [ 'We zullen het zien.' => 'We shall see.' ],
+	 
 ];
 
 # TODO: make sentences with these
@@ -134,7 +140,6 @@ my $other_vocab = [
     [ 'beneden'     => 'below' ],	# below, but depends on context (could mean downstairs)
     [ 'boven'       => 'above' ],
     [ 'vol'         => 'full' ],
-    [ 'leeg'        => 'empty' ],
     [ 'vies'        => 'dirty' ],
     [ 'schoon'      => 'clean' ],
     [ 'koud'        => 'cold' ],
