@@ -128,6 +128,18 @@ my $sentences = [
 	 [ 'Hij kan in het donker niet zien.' => "He can't see in the dark." ],
 	 [ 'We zullen het zien.' => 'We shall see.' ],
 	 
+	 [ 'Waarom dragen mensen kleren?' => 'Why do people wear clothes?' ],
+	 [ 'Wie zal de Ring dragen?' => 'Who will bear the Ring?' ],
+	 [ 'Kan jij de boodschappen dragen?' => 'Could you carry the shopping?' ],
+	 [ 'BTW moet men afdragen.' => 'One has to pay VAT.' ],
+	 [ 'Iemand iets opdragen.' => 'Assign someone a duty.' ],
+	 [ 'Iemand een boek opdragen.' => 'Dedicate a book to someone.' ],
+	 [ 'Burgers moeten zich gedragen.' => 'Citizens must behave.' ],
+	 [ 'De schoen wordt aan de voet gedragen.' => 'The shoe is worn on the foot.' ],
+	 [ 'Mijn doel is mij te misdragen.' => 'I aim to misbehave.' ],
+	 [ 'Hij kan geen pijn verdragen.' => "He can't bear pain." ],
+
+	 
 ];
 
 # TODO: make sentences with these
