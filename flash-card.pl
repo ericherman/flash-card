@@ -139,12 +139,13 @@ my $sentences = [
 	 [ 'Mijn doel is mij te misdragen.' => 'I aim to misbehave.' ],
 	 [ 'Hij kan geen pijn verdragen.' => "He can't bear pain." ],
 
-	 
+	 [ 'De software heeft geen fouten.' => 'The software has no bugs.' ],
+	 [ 'De baas maakt geen fouten.' => 'The boss makes no mistakes.' ],
+	 [ 'Het antwoord is fout.' => 'The answer is wrong.' ],
 ];
 
 # TODO: make sentences with these
 my $other_vocab = [
-    [ 'fout'        => 'wrong' ],
     [ 'meer'        => 'more' ],
     [ 'min'         => 'minus' ],
     [ 'veel'        => 'many' ],
