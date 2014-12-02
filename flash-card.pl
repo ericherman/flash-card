@@ -150,7 +150,7 @@ my $sentences = [
 	 [ 'Wie waren er nog meer?' => 'Who else was there?' ],
 	 [ 'Je moet wat meer lachen.' => 'You have to laugh more often.'],
 	 [ 'Hij kon niet meer werken' => "He could't work anymore." ],
-	 [ 'Het schip is gemeerd.' => 'The ship is docked.'],
+	 [ 'Het schip is gemeerd.' => 'The ship has moored.'],
 ];
 
 # TODO: make sentences with these
