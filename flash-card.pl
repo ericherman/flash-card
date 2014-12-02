@@ -142,11 +142,19 @@ my $sentences = [
 	 [ 'De software heeft geen fouten.' => 'The software has no bugs.' ],
 	 [ 'De baas maakt geen fouten.' => 'The boss makes no mistakes.' ],
 	 [ 'Het antwoord is fout.' => 'The answer is wrong.' ],
+	 
+	 [ 'Het meer is diep.' => 'The lake is deep.' ],
+	 [ 'Hij heeft veel boeken, maar ik heb er meer.' => 'He has many books but I have more.' ],
+	 [ 'Zij hebben meer kinderen.' => 'They have more kids.' ],
+	 [ 'Meer dood dan levend.' => 'More dead than alive.' ],
+	 [ 'Wie waren er nog meer?' => 'Who else was there?' ],
+	 [ 'Je moet wat meer lachen.' => 'You have to laugh more often.'],
+	 [ 'Hij kon niet meer werken' => "He could't work anymore." ],
+	 [ 'Het schip is gemeerd.' => 'The ship is docked.'],
 ];
 
 # TODO: make sentences with these
 my $other_vocab = [
-    [ 'meer'        => 'more' ],
     [ 'min'         => 'minus' ],
     [ 'veel'        => 'many' ],
     [ 'weinig'      => 'few' ],
