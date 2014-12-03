@@ -151,6 +151,12 @@ my $sentences = [
 	 [ 'Je moet wat meer lachen.' => 'You have to laugh more often.'],
 	 [ 'Hij kon niet meer werken' => "He could't work anymore." ],
 	 [ 'Het schip is gemeerd.' => 'The ship has moored.'],
+	 
+	 [ 'De doos is vol.' => 'The box is full.' ],
+	 [ 'Hij zit vol' => 'He is sated.' ],
+	 [ 'Het zit vol met mieren' => 'It is full of ants.' ],
+	 [ 'Het glas is half vol' => 'The glass is half full.' ],
+	 
 ];
 
 # TODO: make sentences with these
@@ -160,7 +166,6 @@ my $other_vocab = [
     [ 'weinig'      => 'few' ],
     [ 'beneden'     => 'below' ],	# below, but depends on context (could mean downstairs)
     [ 'boven'       => 'above' ],
-    [ 'vol'         => 'full' ],
     [ 'vies'        => 'dirty' ],
     [ 'schoon'      => 'clean' ],
     [ 'koud'        => 'cold' ],
