@@ -110,47 +110,47 @@ my $sentences = [
     [ 'Ik zal me even voorstellen.'    => "I'll introduce myself." ],
 
     [ 'Ik kan me dat moeilijk voorstellen.' => 'I find that hard to imagine.' ],
-	 
-	 [ 'De trein is geel en blauw.' => 'The train is yellow and blue.' ],
-	 [ 'De regenboog heeft zeven kleuren' => 'The rainbow has seven colors.' ],
-	 
-	 [ 'De bol is rond.' => 'The sphere is round.' ],
-	 [ 'Honderd is een rond getal.' => 'Hundred is a round number.' ],
-	 [ 'Het plan is rond.' => 'The plan is squared away.' ],
-	 [ 'De mensen zitten rond het vuur.' => 'The people sit around the fire.' ],
-	 
-	 [ 'De lijn is recht.' => 'The line is straight.' ],
-	 [ 'Deze hoek is recht.' => 'This is a right angle.' ],
-	 [ 'Het recht in eigen hand nemen.' => 'Taking the law in their own hands.' ],
-	 [ 'Het glas is half leeg.' => 'The glass is half empty.' ],
-	 [ 'Het glas is half vol.' => 'The glass is half full.' ],
-	 
-	 [ 'Hij kan in het donker niet zien.' => "He can't see in the dark." ],
-	 [ 'We zullen het zien.' => 'We shall see.' ],
-	 
-	 [ 'Waarom dragen mensen kleren?' => 'Why do people wear clothes?' ],
-	 [ 'Wie zal de Ring dragen?' => 'Who will bear the Ring?' ],
-	 [ 'Kan jij de boodschappen dragen?' => 'Could you carry the shopping?' ],
-	 [ 'BTW moet men afdragen.' => 'One has to pay VAT.' ],
-	 [ 'Iemand iets opdragen.' => 'Assign someone a duty.' ],
-	 [ 'Iemand een boek opdragen.' => 'Dedicate a book to someone.' ],
-	 [ 'Burgers moeten zich gedragen.' => 'Citizens must behave.' ],
-	 [ 'De schoen wordt aan de voet gedragen.' => 'The shoe is worn on the foot.' ],
-	 [ 'Mijn doel is mij te misdragen.' => 'I aim to misbehave.' ],
-	 [ 'Hij kan geen pijn verdragen.' => "He can't bear pain." ],
 
-	 [ 'De software heeft geen fouten.' => 'The software has no bugs.' ],
-	 [ 'De baas maakt geen fouten.' => 'The boss makes no mistakes.' ],
-	 [ 'Het antwoord is fout.' => 'The answer is wrong.' ],
-	 
-	 [ 'Het meer is diep.' => 'The lake is deep.' ],
-	 [ 'Hij heeft veel boeken, maar ik heb er meer.' => 'He has many books but I have more.' ],
-	 [ 'Zij hebben meer kinderen.' => 'They have more kids.' ],
-	 [ 'Meer dood dan levend.' => 'More dead than alive.' ],
-	 [ 'Wie waren er nog meer?' => 'Who else was there?' ],
-	 [ 'Je moet wat meer lachen.' => 'You have to laugh more often.'],
-	 [ 'Hij kon niet meer werken' => "He could't work anymore." ],
-	 [ 'Het schip is gemeerd.' => 'The ship has moored.'],
+     [ 'De trein is geel en blauw.' => 'The train is yellow and blue.' ],
+     [ 'De regenboog heeft zeven kleuren' => 'The rainbow has seven colors.' ],
+
+     [ 'De bol is rond.' => 'The sphere is round.' ],
+     [ 'Honderd is een rond getal.' => 'Hundred is a round number.' ],
+     [ 'Het plan is rond.' => 'The plan is squared away.' ],
+     [ 'De mensen zitten rond het vuur.' => 'The people sit around the fire.' ],
+
+     [ 'De lijn is recht.' => 'The line is straight.' ],
+     [ 'Deze hoek is recht.' => 'This is a right angle.' ],
+     [ 'Het recht in eigen hand nemen.' => 'Taking the law in their own hands.' ],
+     [ 'Het glas is half leeg.' => 'The glass is half empty.' ],
+     [ 'Het glas is half vol.' => 'The glass is half full.' ],
+
+     [ 'Hij kan in het donker niet zien.' => "He can't see in the dark." ],
+     [ 'We zullen het zien.' => 'We shall see.' ],
+
+     [ 'Waarom dragen mensen kleren?' => 'Why do people wear clothes?' ],
+     [ 'Wie zal de Ring dragen?' => 'Who will bear the Ring?' ],
+     [ 'Kan jij de boodschappen dragen?' => 'Could you carry the shopping?' ],
+     [ 'BTW moet men afdragen.' => 'One has to pay VAT.' ],
+     [ 'Iemand iets opdragen.' => 'Assign someone a duty.' ],
+     [ 'Iemand een boek opdragen.' => 'Dedicate a book to someone.' ],
+     [ 'Burgers moeten zich gedragen.' => 'Citizens must behave.' ],
+     [ 'De schoen wordt aan de voet gedragen.' => 'The shoe is worn on the foot.' ],
+     [ 'Mijn doel is mij te misdragen.' => 'I aim to misbehave.' ],
+     [ 'Hij kan geen pijn verdragen.' => "He can't bear pain." ],
+
+     [ 'De software heeft geen fouten.' => 'The software has no bugs.' ],
+     [ 'De baas maakt geen fouten.' => 'The boss makes no mistakes.' ],
+     [ 'Het antwoord is fout.' => 'The answer is wrong.' ],
+
+     [ 'Het meer is diep.' => 'The lake is deep.' ],
+     [ 'Hij heeft veel boeken, maar ik heb er meer.' => 'He has many books but I have more.' ],
+     [ 'Zij hebben meer kinderen.' => 'They have more kids.' ],
+     [ 'Meer dood dan levend.' => 'More dead than alive.' ],
+     [ 'Wie waren er nog meer?' => 'Who else was there?' ],
+     [ 'Je moet wat meer lachen.' => 'You have to laugh more often.'],
+     [ 'Hij kon niet meer werken' => "He could't work anymore." ],
+     [ 'Het schip is gemeerd.' => 'The ship has moored.'],
 ];
 
 # TODO: make sentences with these
@@ -158,7 +158,7 @@ my $other_vocab = [
     [ 'min'         => 'minus' ],
     [ 'veel'        => 'many' ],
     [ 'weinig'      => 'few' ],
-    [ 'beneden'     => 'below' ],	# below, but depends on context (could mean downstairs)
+    [ 'beneden'     => 'below' ],    # below, but depends on context (could mean downstairs)
     [ 'boven'       => 'above' ],
     [ 'vol'         => 'full' ],
     [ 'vies'        => 'dirty' ],
