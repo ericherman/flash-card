@@ -174,6 +174,11 @@ my $sentences = [
         'Gaat deze lift naar boven of beneden?' =>
           'Is the elevator going up or down?'
     ],
+
+    [
+        'Ik ben koken koeken in de keuken.' =>
+          'I am cooking cookies in the kitchen'
+    ],
 ];
 
 # TODO: make sentences with these
@@ -254,8 +259,6 @@ my $other_vocab = [
     [ 'zoeken'          => 'search' ],
     [ 'bedenken'        => 'make up' ],
     [ 'mijmeren'        => 'contemplate' ],
-    [ 'koken'           => 'cook' ],
-    [ 'koeken'          => 'cookies' ],
 ];
 
 my $het_de = [
