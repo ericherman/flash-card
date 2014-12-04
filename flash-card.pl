@@ -154,7 +154,8 @@ my $sentences = [
 
      [ 'Mijn werkkamer is boven.' => 'My office is upstairs' ],
      [ 'Beneden is de woonkamer.' => 'Downstairs is the wonkamer.' ],
-     [ 'Moet deze doos naar boven, of kan ik de doos beneden laten staan?' => '' ],
+     [ 'Moet deze doos naar boven, of kan ik de doos beneden laten staan?'
+          => 'Should this box go upstairs, or can I leave the box downstairs.' ],
      [ 'Boven op de berg staat een restaurant.' => 'At the top of the mountain is a restaurant' ],
      [ 'Gaat deze lift naar boven of beneden?' => 'Is the elevator going up or down?' ],
 ];
