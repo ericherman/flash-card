@@ -151,6 +151,12 @@ my $sentences = [
      [ 'Je moet wat meer lachen.' => 'You have to laugh more often.'],
      [ 'Hij kon niet meer werken' => "He could't work anymore." ],
      [ 'Het schip is gemeerd.' => 'The ship has moored.'],
+
+     [ 'Mijn werkkamer is boven.' => 'My office is upstairs' ],
+     [ 'Beneden is de woonkamer.' => 'Downstairs is the wonkamer.' ],
+     [ 'Moet deze doos naar boven, of kan ik de doos beneden laten staan?' => '' ],
+     [ 'Boven op de berg staat een restaurant.' => 'At the top of the mountain is a restaurant' ],
+     [ 'Gaat deze lift naar boven of beneden?' => 'Is the elevator going up or down?' ],
 ];
 
 # TODO: make sentences with these
@@ -158,8 +164,6 @@ my $other_vocab = [
     [ 'min'         => 'minus' ],
     [ 'veel'        => 'many' ],
     [ 'weinig'      => 'few' ],
-    [ 'beneden'     => 'below' ],    # below, but depends on context (could mean downstairs)
-    [ 'boven'       => 'above' ],
     [ 'vol'         => 'full' ],
     [ 'vies'        => 'dirty' ],
     [ 'schoon'      => 'clean' ],
