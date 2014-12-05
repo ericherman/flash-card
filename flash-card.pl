@@ -175,10 +175,15 @@ my $sentences = [
           'Is the elevator going up or down?'
     ],
 
- #   [
- #       'Ik ben koken koeken in de keuken.' =>
- #         'I am boiling cookies in the kitchen'
- #   ],
+    [
+        'Je kunt de zin kopieren en plakken.' =>
+          'You can copy and paste the sentence.'
+    ],
+
+    #   [
+    #       'Ik ben koken koeken in de keuken.' =>
+    #         'I am boiling cookies in the kitchen'
+    #   ],
 ];
 
 # TODO: make sentences with these
