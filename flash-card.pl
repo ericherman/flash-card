@@ -107,37 +107,9 @@ my $sentences = [
     [ 'De man vindt het jammer.'      => 'The man finds it a bummer.' ],
     [ 'De man is teleurgesteld.'      => 'The man is disappointed.' ],
     [ 'De vrouw is klaar met werken.' => 'The woman is done with work.' ],
-    [ 'Ik zal me even voorstellen.'    => "I'll introduce myself." ],
+    [ 'Ik zal me even voorstellen.'   => "I'll introduce myself." ],
 
     [ 'Ik kan me dat moeilijk voorstellen.' => 'I find that hard to imagine.' ],
-	 
-	 [ 'De trein is geel en blauw.' => 'The train is yellow and blue.' ],
-	 [ 'De regenboog heeft zeven kleuren' => 'The rainbow has seven colors.' ],
-	 
-	 [ 'De bol is rond.' => 'The sphere is round.' ],
-	 [ 'Honderd is een rond getal.' => 'Hundred is a round number.' ],
-	 [ 'Het plan is rond.' => 'The plan is squared away.' ],
-	 [ 'De mensen zitten rond het vuur.' => 'The people sit around the fire.' ],
-	 
-	 [ 'De lijn is recht.' => 'The line is straight.' ],
-	 [ 'Deze hoek is recht.' => 'This is a right angle.' ],
-	 [ 'Het recht in eigen hand nemen.' => 'Taking the law in their own hands.' ],
-	 [ 'Het glas is half leeg.' => 'The glass is half empty.' ],
-	 [ 'Het glas is half vol.' => 'The glass is half full.' ],
-	 
-	 [ 'Hij kan in het donker niet zien.' => "He can't see in the dark." ],
-	 [ 'We zullen het zien.' => 'We shall see.' ],
-	 
-	 [ 'Waarom dragen mensen kleren?' => 'Why do people wear clothes?' ],
-	 [ 'Wie zal de Ring dragen?' => 'Who will bear the Ring?' ],
-	 [ 'Kan jij de boodschappen dragen?' => 'Could you carry the shopping?' ],
-	 [ 'BTW moet men afdragen.' => 'One has to pay VAT.' ],
-	 [ 'Iemand iets opdragen.' => 'Assign someone a duty.' ],
-	 [ 'Iemand een boek opdragen.' => 'Dedicate a book to someone.' ],
-	 [ 'Burgers moeten zich gedragen.' => 'Citizens must behave.' ],
-	 [ 'De schoen wordt aan de voet gedragen.' => 'The shoe is worn on the foot.' ],
-	 [ 'Mijn doel is mij te misdragen.' => 'I aim to misbehave.' ],
-	 [ 'Hij kan geen pijn verdragen.' => "He can't bear pain." ],
 
 	 [ 'De software heeft geen fouten.' => 'The software has no bugs.' ],
 	 [ 'De baas maakt geen fouten.' => 'The boss makes no mistakes.' ],
@@ -156,12 +128,72 @@ my $sentences = [
 	 [ 'Hij zit vol' => 'He is sated.' ],
 	 [ 'Het zit vol met mieren' => 'It is full of ants.' ],
 	 [ 'Het glas is half vol' => 'The glass is half full.' ],
-	 
+
+    [ 'De trein is geel en blauw.'       => 'The train is yellow and blue.' ],
+    [ 'De regenboog heeft zeven kleuren' => 'The rainbow has seven colors.' ],
+
+    [ 'De bol is rond.'                 => 'The sphere is round.' ],
+    [ 'Honderd is een rond getal.'      => 'Hundred is a round number.' ],
+    [ 'Het plan is rond.'               => 'The plan is squared away.' ],
+    [ 'De mensen zitten rond het vuur.' => 'The people sit around the fire.' ],
+
+    [ 'De lijn is recht.'   => 'The line is straight.' ],
+    [ 'Deze hoek is recht.' => 'This is a right angle.' ],
+    [
+        'Het recht in eigen hand nemen.' => 'Taking the law in their own hands.'
+    ],
+    [ 'Het glas is half leeg.' => 'The glass is half empty.' ],
+    [ 'Het glas is half vol.'  => 'The glass is half full.' ],
+
+    [ 'Hij kan in het donker niet zien.' => "He can't see in the dark." ],
+    [ 'We zullen het zien.'              => 'We shall see.' ],
+
+    [ 'Waarom dragen mensen kleren?'    => 'Why do people wear clothes?' ],
+    [ 'Wie zal de Ring dragen?'         => 'Who will bear the Ring?' ],
+    [ 'Kan jij de boodschappen dragen?' => 'Could you carry the shopping?' ],
+    [ 'BTW moet men afdragen.'          => 'One has to pay VAT.' ],
+    [ 'Iemand iets opdragen.'           => 'Assign someone a duty.' ],
+    [ 'Iemand een boek opdragen.'       => 'Dedicate a book to someone.' ],
+    [ 'Burgers moeten zich gedragen.'   => 'Citizens must behave.' ],
+    [
+        'De schoen wordt aan de voet gedragen.' =>
+          'The shoe is worn on the foot.'
+    ],
+    [ 'Mijn doel is mij te misdragen.' => 'I aim to misbehave.' ],
+    [ 'Hij kan geen pijn verdragen.'   => "He can't bear pain." ],
+
+    [ 'Mijn werkkamer is boven.' => 'My office is upstairs' ],
+    [ 'Beneden is de woonkamer.' => 'Downstairs is the wonkamer.' ],
+    [
+        'Moet deze doos naar boven, of kan ik de doos beneden laten staan?' =>
+          'Should this box go upstairs, or can I leave the box downstairs.'
+    ],
+    [
+        'Boven op de berg staat een restaurant.' =>
+          'At the top of the mountain is a restaurant'
+    ],
+    [
+        'Gaat deze lift naar boven of beneden?' =>
+          'Is the elevator going up or down?'
+    ],
+
+    [
+        'Je kunt de zin kopieren en plakken.' =>
+          'You can copy and paste the sentence.'
+    ],
+
+    #   [
+    #       'Ik ben koken koeken in de keuken.' =>
+    #         'I am boiling cookies in the kitchen'
+    #   ],
+
 ];
 
 # TODO: make sentences with these
 my $other_vocab = [
+
     [ 'min'         => 'minus' ],
+    [ 'vol'          => 'full' ],
     [ 'veel'        => 'many' ],
     [ 'weinig'      => 'few' ],
     [ 'beneden'     => 'below' ],	# below, but depends on context (could mean downstairs)
@@ -240,12 +272,13 @@ my $other_vocab = [
     [ 'mijmeren'    => 'contemplate' ],
     [ 'koken'       => 'cook' ],
     [ 'koeken'      => 'cookies' ],
+
 ];
 
 my $het_de = [
     [ 'het lichaam'     => 'the body' ],
     [ 'de buik'         => 'the belly' ],
-    [ 'de maag'         => 'the stomach' ],   # part of the digestive tract
+    [ 'de maag'         => 'the stomach' ],        # part of the digestive tract
     [ 'de rug'          => 'the back' ],
     [ 'het been'        => 'the leg' ],
     [ 'de arm'          => 'the arm' ],
@@ -389,37 +422,40 @@ my $het_de = [
     [ 'de sport'        => 'the sport' ],
     [ 'de toets'        => 'the test' ],
     [ 'de klas'         => 'the class' ],
-    [ 'de juf'          => 'the teacher' ],       # "juf" is female teacher. The male equivalent would be "meester" (master)
-    [ 'de les'          => 'the lesson' ],
-    [ 'de school'       => 'the school' ],
-    [ 'het land'        => 'the country' ],       # could also be "the land" (as an area, not a particular country)
-    [ 'de wereld'       => 'the world' ],
-    [ 'het slot'        => 'the lock' ],
-    [ 'de tent'         => 'the tent' ],
-    [ 'het uur'         => 'the hour' ],
-    [ 'het internet'    => 'the internet' ],
-    [ 'het gesprek'     => 'the conversation' ],
-    [ 'het probleem'    => 'the problem' ],
-    [ 'de website'      => 'the website' ],
-    [ 'het contact'     => 'the contact' ],
-    [ 'de politie'      => 'the police' ],
-    [ 'het stuk'        => 'the piece' ],
-    [ 'de meter'        => 'the meter' ],
-    [ 'de brand'        => 'the fire' ],
+    [ 'de juf'          => 'the teacher' ]
+    , # "juf" is female teacher. The male equivalent would be "meester" (master)
+    [ 'de les'    => 'the lesson' ],
+    [ 'de school' => 'the school' ],
+    [ 'het land'  => 'the country' ]
+    ,    # could also be "the land" (as an area, not a particular country)
+    [ 'de wereld'    => 'the world' ],
+    [ 'het slot'     => 'the lock' ],
+    [ 'de tent'      => 'the tent' ],
+    [ 'het uur'      => 'the hour' ],
+    [ 'het internet' => 'the internet' ],
+    [ 'het gesprek'  => 'the conversation' ],
+    [ 'het probleem' => 'the problem' ],
+    [ 'de website'   => 'the website' ],
+    [ 'het contact'  => 'the contact' ],
+    [ 'de politie'   => 'the police' ],
+    [ 'het stuk'     => 'the piece' ],
+    [ 'de meter'     => 'the meter' ],
+    [ 'de brand'     => 'the fire' ],
 ];
 
 my $too_easy = [
-    [ 'ja'        => 'yes' ],
-    [ 'nee'       => 'no' ],
-    [ 'klein'     => 'small' ],
-    [ 'groot'     => 'big' ],
-    [ 'goed'      => 'good' ],
-    [ 'oke'       => 'okay' ],      # should be "ok\N{U+00E9}", but whatever (or just 'ok')
-    [ 'drinken'   => 'drink' ],
-    [ 'eten'      => 'eat' ],
-    [ 'plus'      => 'plus' ],
-    [ 'warm'      => 'warm' ],
-    [ 'lekker'    => 'nice' ],      # good, tasty, whatever (well, ACTUALLY. . . . . . digression)
+    [ 'ja'    => 'yes' ],
+    [ 'nee'   => 'no' ],
+    [ 'klein' => 'small' ],
+    [ 'groot' => 'big' ],
+    [ 'goed'  => 'good' ],
+    [ 'oke' => 'okay' ], # should be "ok\N{U+00E9}", but whatever (or just 'ok')
+    [ 'drinken' => 'drink' ],
+    [ 'eten'    => 'eat' ],
+    [ 'plus'    => 'plus' ],
+    [ 'warm'    => 'warm' ],
+    [ 'lekker'  => 'nice' ]
+    ,    # good, tasty, whatever (well, ACTUALLY. . . . . . digression)
     [ 'werk'      => 'work' ],
     [ 'hallo'     => 'hello' ],
     [ 'tot ziens' => 'see you' ],
@@ -468,6 +504,7 @@ else {
 }
 
 pick_a_card( $deck, $from_english );
+
 
 # ----------
 # notes
