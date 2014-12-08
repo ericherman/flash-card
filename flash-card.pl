@@ -163,7 +163,7 @@ my $sentences = [
     [ 'Hij kan geen pijn verdragen.'   => "He can't bear pain." ],
 
     [ 'Mijn werkkamer is boven.' => 'My office is upstairs' ],
-    [ 'Beneden is de woonkamer.' => 'Downstairs is the wonkamer.' ],
+    [ 'De woonkamer is beneden.' => 'The living room is downstairs.' ],
     [
         'Moet deze doos naar boven, of kan ik de doos beneden laten staan?' =>
           'Should this box go upstairs, or can I leave the box downstairs.'
@@ -173,7 +173,7 @@ my $sentences = [
           'At the top of the mountain is a restaurant'
     ],
     [
-        'Gaat deze lift naar boven of beneden?' =>
+        'Gaat de lift naar boven of beneden?' =>
           'Is the elevator going up or down?'
     ],
 
@@ -182,11 +182,7 @@ my $sentences = [
           'You can copy and paste the sentence.'
     ],
 
-    #   [
-    #       'Ik ben koken koeken in de keuken.' =>
-    #         'I am boiling cookies in the kitchen'
-    #   ],
-
+    [ 'Ik bak koekjes in de keuken.' => 'I am baking cookies in the kitchen.' ],
 ];
 
 # TODO: make sentences with these
