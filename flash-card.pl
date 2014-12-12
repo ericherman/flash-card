@@ -183,13 +183,18 @@ my $sentences = [
     ],
 
     [ 'Ik bak koekjes in de keuken.' => 'I am baking cookies in the kitchen.' ],
+
+	 [ 'Zij doet het anders.' => 'She does it differently.' ],
+	 [ 'De andere broek is rood' => 'The other pants are red.' ],
+	 [ 'Hij is anders zo rustig' => 'He is usually so quiet.' ],
+	 [ 'De dokter woont ergens anders.' => 'The doctor lives somewhere else.']
+	 
 ];
 
 # TODO: make sentences with these
 # NOTE(chris): these are in alphabetical order
 my $other_vocab = [
 
-	[ 'anders' => 'different' ],
 	[ 'bedenken' => 'make up' ],
 	[ 'begrijpen' => 'understand' ],
 	[ 'bekijken' => 'view' ],
