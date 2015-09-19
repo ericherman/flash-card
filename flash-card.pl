@@ -3,6 +3,132 @@ use strict;
 use warnings;
 
 my $sentences = [
+    [ 'Wat voor werk doe je?'            => 'What do you do for work?' ],
+    [ 'Ik ben een computer programmeur.' => 'I am a computer programmer.' ],
+    [
+        'Hoeveel dagen per week werk je?' =>
+          'How many days per week do you work?'
+    ],
+    [ 'Ik werk vijf dagen per week' => 'I work five days per week.' ],
+    [
+        'Hoe laat begin en eindig je met je werk?' =>
+        'What time do you begin and end work?' ],
+    [
+          'Ik begin werk rond negen uur en ik laat ongeveer vijf.' =>
+   "I begin work around nine o'clock and I leave about five." ],
+    ],
+    [
+        "Welke diploma's of wat voor graad heb je?" =>
+          "What diplomas or what degrees do you have?"
+    ],
+    [
+        'Ik heb geen formeel onderwijs, ik ben autodidact.' =>
+          'I have no formal education, I am self-taught.'
+    ],
+    [
+        'Waar heb je in het verleden gewerkt?' =>
+          'where have you worked in the past?'
+    ],
+    [
+        'In het verleden werkt ik in Duitsland.' =>
+          'In the past, I worked in Germany.'
+    ],
+    [
+        'Wat find je leuk aan je huidige baan?' =>
+          'What do you like about your current job?'
+    ],
+    [
+        "Ik vind mijn collega's heel leuk en het werk interessant." =>
+          "I find my colleagues very nice and the work interresting."
+    ],
+    [
+        'Wat is een voordeel en nadeel van je werk?' =>
+          'What is an advantage and disadvantage of your work?'
+    ],
+    [
+        'Het geld is goed, maar het werk is moeilijk' =>
+          'The money is good, but the work is hard'
+    ],
+    [
+        'Waarom heb je voor jouw baan gekozen?' =>
+          'Why did you choose your job?'
+    ],
+    [
+        'Het is wat ik altijd al wilde doen.' =>
+          'It is what I always wanted to do.'
+    ],
+    [
+        'Wat wilde je worden, toen je kind was?' =>
+          'What did you want to be when you were a child?'
+    ],
+    [ 'Ik wilde computers programmeren.' => 'I wanted to program computers.' ],
+    [ 'Wat voor verk deed je vader?' => 'What did your father do for work?' ],
+    [
+        'Ik heb hetzelfde beroep als mijn vader.' =>
+          'I have the same profression as my father.'
+    ],
+    [ 'Wat voor werk doet je moeder?' => 'What does your mother do for work?' ],
+    [ 'Mijn moeder is een vroedvrouw.' => 'My mother is a midwife' ],
+    [
+        'Wat voor werk doet je broer of zus?' =>
+          'What does your brother or sister do for work?'
+    ],
+    [
+        'Mijn zus is een professor in de biochemie.' =>
+          'My sister is a professor of biochemistry.'
+    ],
+    [
+        'Werk je weleens in het weekeinde?' =>
+          'Do you sometimes work on the weekend?'
+    ],
+    [
+        'Ik moet zelden in het weekend werken.' =>
+          'I seldom have to work on the weekends.'
+    ],
+    [
+        'Moet je voor je werk veel vergaderen?' =>
+          'Do you have to go to a lot of meetings for work?'
+    ],
+    [
+        'De meeste vergaderingen zijn eigenlijk nuttig.' =>
+          'Most of the meetings are actually useful.'
+    ],
+    [
+        "Kun je met je collega's opschieten?" =>
+          "Can you get along with your colleagues?"
+    ],
+    [
+        "Ik opschieten echt goed met mijn collega's." =>
+          "I get along really well with my colleagues."
+    ],
+    [ 'Kun je met je bass opschieten?' => 'Can you get along with your boss?' ],
+    [
+        'Mijn baas steunt mij en ik steun hem.' =>
+          'My boss supports me and I support him.'
+    ],
+    [
+        'Van de mensen die je kent, wie heeft de leukste baan?' =>
+          'Of the people you know, who has the best job?'
+    ],
+    [ 'Mijn vader is gepensioneerd.' => 'My father is retired.' ],
+    [
+        'Welke banen worden te weinig betaald?' =>
+          'What jobs are paid too little?'
+    ],
+    [ 'Leraren worden te weinig betaald.' => 'Teachers are paid too little.' ],
+    [ 'Welke banen worden te veel betaald?' => 'What jobs are paid too much?' ],
+    [
+        'Sommige atleten zijn te veel betaald.' =>
+          'Some athletes are paid too much.'
+    ],
+    [ 'Beschrijf je droombaan.' => 'Describe your dream job.' ],
+    [
+        "Ik zou graag met pensioen gaan en werken aan mijn projecten." =>
+          "I would like to retire and work on my projects."
+    ],
+    [ 'Deze informatie is van groot belang.' => 'This information is of great importance.' ],
+    [ 'Vriendelijkheid is zijn zwakke punt.' => 'Kindness is his weak point.' ],
+    [ 'Ik vond zijn huis met moeite.' => 'I found his house with difficulty.' ],
     [ 'Ik ben een student.'          => 'I am a student.' ],
     [ 'Jij bent een student.'        => 'You are a student.' ],
     [ 'Ben jij een student?'         => 'Are you a student?' ],
