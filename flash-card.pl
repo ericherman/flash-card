@@ -111,23 +111,26 @@ my $sentences = [
 
     [ 'Ik kan me dat moeilijk voorstellen.' => 'I find that hard to imagine.' ],
 
-	 [ 'De software heeft geen fouten.' => 'The software has no bugs.' ],
-	 [ 'De baas maakt geen fouten.' => 'The boss makes no mistakes.' ],
-	 [ 'Het antwoord is fout.' => 'The answer is wrong.' ],
-	 
-	 [ 'Het meer is diep.' => 'The lake is deep.' ],
-	 [ 'Hij heeft veel boeken, maar ik heb er meer.' => 'He has many books but I have more.' ],
-	 [ 'Zij hebben meer kinderen.' => 'They have more kids.' ],
-	 [ 'Meer dood dan levend.' => 'More dead than alive.' ],
-	 [ 'Wie waren er nog meer?' => 'Who else was there?' ],
-	 [ 'Je moet wat meer lachen.' => 'You have to laugh more often.'],
-	 [ 'Hij kon niet meer werken' => "He could't work anymore." ],
-	 [ 'Het schip is gemeerd.' => 'The ship has moored.'],
-	 
-	 [ 'De doos is vol.' => 'The box is full.' ],
-	 [ 'Hij zit vol' => 'He is sated.' ],
-	 [ 'Het zit vol met mieren' => 'It is full of ants.' ],
-	 [ 'Het glas is half vol' => 'The glass is half full.' ],
+    [ 'De software heeft geen fouten.' => 'The software has no bugs.' ],
+    [ 'De baas maakt geen fouten.'     => 'The boss makes no mistakes.' ],
+    [ 'Het antwoord is fout.'          => 'The answer is wrong.' ],
+
+    [ 'Het meer is diep.' => 'The lake is deep.' ],
+    [
+        'Hij heeft veel boeken, maar ik heb er meer.' =>
+          'He has many books but I have more.'
+    ],
+    [ 'Zij hebben meer kinderen.' => 'They have more kids.' ],
+    [ 'Meer dood dan levend.'     => 'More dead than alive.' ],
+    [ 'Wie waren er nog meer?'    => 'Who else was there?' ],
+    [ 'Je moet wat meer lachen.'  => 'You have to laugh more often.' ],
+    [ 'Hij kon niet meer werken'  => "He could't work anymore." ],
+    [ 'Het schip is gemeerd.'     => 'The ship has moored.' ],
+
+    [ 'De doos is vol.'        => 'The box is full.' ],
+    [ 'Hij zit vol'            => 'He is sated.' ],
+    [ 'Het zit vol met mieren' => 'It is full of ants.' ],
+    [ 'Het glas is half vol'   => 'The glass is half full.' ],
 
     [ 'De trein is geel en blauw.'       => 'The train is yellow and blue.' ],
     [ 'De regenboog heeft zeven kleuren' => 'The rainbow has seven colors.' ],
@@ -184,96 +187,96 @@ my $sentences = [
 
     [ 'Ik bak koekjes in de keuken.' => 'I am baking cookies in the kitchen.' ],
 
-	 [ 'Zij doet het anders.' => 'She does it differently.' ],
-	 [ 'De andere broek is rood' => 'The other pants are red.' ],
-	 [ 'Hij is anders zo rustig' => 'He is usually so quiet.' ],
-	 [ 'De dokter woont ergens anders.' => 'The doctor lives somewhere else.']
-	 
+    [ 'Zij doet het anders.'           => 'She does it differently.' ],
+    [ 'De andere broek is rood'        => 'The other pants are red.' ],
+    [ 'Hij is anders zo rustig'        => 'He is usually so quiet.' ],
+    [ 'De dokter woont ergens anders.' => 'The doctor lives somewhere else.' ]
+
 ];
 
 # TODO: make sentences with these
 # NOTE(chris): these are in alphabetical order
 my $other_vocab = [
 
-	[ 'bedenken' => 'make up' ],
-	[ 'begrijpen' => 'understand' ],
-	[ 'bekijken' => 'view' ],
-	[ 'bellen' => 'call' ],
-	[ 'beneden' => 'below' ],
-	[ 'betalen' => 'pay' ],
-	[ 'boven' => 'above' ],
-	[ 'daar' => 'daar' ],
-	[ 'dood' => 'dead' ],
-	[ 'dubbel' => 'double' ],
-	[ 'een beetje' => 'a bit' ],
-	[ 'gek' => 'crazy' ],
-	[ 'gisteren' => 'yesterday' ],
-	[ 'hangen' => 'hang' ],
-	[ 'hetzelfde' => 'same' ],
-	[ 'hier' => 'here' ],
-	[ 'hoog' => 'high' ],
-	[ 'iemand' => 'somebody' ],
-	[ 'kiezen' => 'choose' ],
-	[ 'kijken' => 'look' ],
-	[ 'koeken' => 'cookies' ],
-	[ 'koken' => 'cook' ],
-	[ 'kopen' => 'buy' ],
-	[ 'kort' => 'short' ],
-	[ 'koud' => 'cold' ],
-	[ 'laag' => 'low' ],
-	[ 'lachen' => 'laugh' ],
-	[ 'lang' => 'long' ],
-	[ 'leggen' => 'lay' ],
-	[ 'leren' => 'learn' ],
-	[ 'leven' => 'living' ],
-	[ 'lezen' => 'read' ],
-	[ 'licht' => 'light' ],
-	[ 'liegen' => 'lie' ],
-	[ 'liggen' => 'lay' ],
-	[ 'lopen' => 'walk' ],
-	[ 'makkelijk' => 'easy' ],
-	[ 'mijmeren' => 'contemplate' ],
-	[ 'min' => 'minus' ],
-	[ 'moe' => 'tired' ],
-	[ 'moelijk' => 'difficult' ],
-	[ 'morgen' => 'tomorrow' ],
-	[ 'nat' => 'wet' ],
-	[ 'niemand' => 'nobody' ],
-	[ 'normaal' => 'normal' ],
-	[ 'nu' => 'now' ],
-	[ 'printen' => 'print' ],
-	[ 'rijden' => 'drive' ],
-	[ 'roepen' => 'holler' ],
-	[ 'roken' => 'smoke' ],
-	[ 'schoon' => 'clean' ],
-	[ 'schrijven' => 'write' ],
-	[ 'slapen' => 'sleep' ],
-	[ 'slepen' => 'drag' ],
-	[ 'spelen' => 'play' ],
-	[ 'spellen' => 'spell' ],
-	[ 'spreken' => 'speak' ],
-	[ 'staan' => 'stand' ],
-	[ 'stil' => 'silent' ],
-	[ 'tekenen' => 'draw' ],
-	[ 'trekken' => 'pull' ],
-	[ 'typen' => 'type' ],
-	[ 'vallen' => 'fall' ],
-	[ 'vandaag' => 'today' ],
-	[ 'veel' => 'many' ],
-	[ 'vies' => 'dirty' ],
-	[ 'voetballen' => 'play soccer' ],
-	[ 'vol' => 'full' ],
-	[ 'voorstellen' => 'propose' ],
-	[ 'voorstellen aan' => 'introduce' ],
-	[ 'vroeger' => 'former' ],
-	[ 'wassen' => 'wash' ],
-	[ 'weinig' => 'few' ],
-	[ 'werken' => 'work' ],
-	[ 'zien' => 'see' ],
-	[ 'zingen' => 'sing' ],
-	[ 'zitten' => 'sit' ],
-	[ 'zoeken' => 'search' ],
-	[ 'zwaar' => 'heavy' ]
+    [ 'bedenken'        => 'make up' ],
+    [ 'begrijpen'       => 'understand' ],
+    [ 'bekijken'        => 'view' ],
+    [ 'bellen'          => 'call' ],
+    [ 'beneden'         => 'below' ],
+    [ 'betalen'         => 'pay' ],
+    [ 'boven'           => 'above' ],
+    [ 'daar'            => 'daar' ],
+    [ 'dood'            => 'dead' ],
+    [ 'dubbel'          => 'double' ],
+    [ 'een beetje'      => 'a bit' ],
+    [ 'gek'             => 'crazy' ],
+    [ 'gisteren'        => 'yesterday' ],
+    [ 'hangen'          => 'hang' ],
+    [ 'hetzelfde'       => 'same' ],
+    [ 'hier'            => 'here' ],
+    [ 'hoog'            => 'high' ],
+    [ 'iemand'          => 'somebody' ],
+    [ 'kiezen'          => 'choose' ],
+    [ 'kijken'          => 'look' ],
+    [ 'koeken'          => 'cookies' ],
+    [ 'koken'           => 'cook' ],
+    [ 'kopen'           => 'buy' ],
+    [ 'kort'            => 'short' ],
+    [ 'koud'            => 'cold' ],
+    [ 'laag'            => 'low' ],
+    [ 'lachen'          => 'laugh' ],
+    [ 'lang'            => 'long' ],
+    [ 'leggen'          => 'lay' ],
+    [ 'leren'           => 'learn' ],
+    [ 'leven'           => 'living' ],
+    [ 'lezen'           => 'read' ],
+    [ 'licht'           => 'light' ],
+    [ 'liegen'          => 'lie' ],
+    [ 'liggen'          => 'lay' ],
+    [ 'lopen'           => 'walk' ],
+    [ 'makkelijk'       => 'easy' ],
+    [ 'mijmeren'        => 'contemplate' ],
+    [ 'min'             => 'minus' ],
+    [ 'moe'             => 'tired' ],
+    [ 'moelijk'         => 'difficult' ],
+    [ 'morgen'          => 'tomorrow' ],
+    [ 'nat'             => 'wet' ],
+    [ 'niemand'         => 'nobody' ],
+    [ 'normaal'         => 'normal' ],
+    [ 'nu'              => 'now' ],
+    [ 'printen'         => 'print' ],
+    [ 'rijden'          => 'drive' ],
+    [ 'roepen'          => 'holler' ],
+    [ 'roken'           => 'smoke' ],
+    [ 'schoon'          => 'clean' ],
+    [ 'schrijven'       => 'write' ],
+    [ 'slapen'          => 'sleep' ],
+    [ 'slepen'          => 'drag' ],
+    [ 'spelen'          => 'play' ],
+    [ 'spellen'         => 'spell' ],
+    [ 'spreken'         => 'speak' ],
+    [ 'staan'           => 'stand' ],
+    [ 'stil'            => 'silent' ],
+    [ 'tekenen'         => 'draw' ],
+    [ 'trekken'         => 'pull' ],
+    [ 'typen'           => 'type' ],
+    [ 'vallen'          => 'fall' ],
+    [ 'vandaag'         => 'today' ],
+    [ 'veel'            => 'many' ],
+    [ 'vies'            => 'dirty' ],
+    [ 'voetballen'      => 'play soccer' ],
+    [ 'vol'             => 'full' ],
+    [ 'voorstellen'     => 'propose' ],
+    [ 'voorstellen aan' => 'introduce' ],
+    [ 'vroeger'         => 'former' ],
+    [ 'wassen'          => 'wash' ],
+    [ 'weinig'          => 'few' ],
+    [ 'werken'          => 'work' ],
+    [ 'zien'            => 'see' ],
+    [ 'zingen'          => 'sing' ],
+    [ 'zitten'          => 'sit' ],
+    [ 'zoeken'          => 'search' ],
+    [ 'zwaar'           => 'heavy' ]
 
 ];
 
@@ -456,10 +459,9 @@ my $too_easy = [
     [ 'eten'    => 'eat' ],
     [ 'plus'    => 'plus' ],
     [ 'warm'    => 'warm' ],
-    [ 'lekker'  => 'nice' ]
-    ,    # good, tasty, whatever (well, ACTUALLY. . . . . . digression)
-    [ 'werk'      => 'work' ],
-    [ 'hallo'     => 'hello' ],
+    [ 'lekker'  => 'nice' ], # good, tasty, etc., (well, ACTUALLY... digression)
+    [ 'werk'    => 'work' ],
+    [ 'hallo'   => 'hello' ],
     [ 'tot ziens' => 'see you' ],
     [ 'hoi'       => 'hi' ],
     [ 'jong'      => 'young' ],
@@ -470,57 +472,62 @@ my $too_easy = [
 ];
 
 sub make_underline {
-	my ($input, $target) = @_;
-	
-	# split the input in words and create an error underline for every word
-	# if words are missing it'll give bad output, but whatev.
-	
-	my @input_words = split / /, lc($input);
-	my @target_words = split / /, lc($target);
+    my ( $input, $target ) = @_;
 
-	my $out = "";
-WORD:
-	for( my $i=0; $i<scalar @target_words; $i++ ) {
+    # split the input in words and create an error underline for every word
+    # if words are missing it'll give bad output, but whatev.
 
-		# if the user input is missing words at the end, that's wrong
-		if( $i >= scalar @input_words ) {
-			$out .= " " . ("~" x length($target_words[$i]) );
-			next;
-		}
+    my @input_words  = split / /, lc($input);
+    my @target_words = split / /, lc($target);
 
-		my $diff = $input_words[$i] ^ $target_words[$i];
-		my @dpos;
-		push @dpos, [ $-[1], $+[1] - $-[1] ] while $diff =~ m{ ([^\x00]+) }xmsg;
+    my $out = "";
+  WORD:
+    for ( my $i = 0 ; $i < scalar @target_words ; $i++ ) {
 
-		if( scalar @dpos > 0 ) {
+        # if the user input is missing words at the end, that's wrong
+        if ( $i >= scalar @input_words ) {
+            $out .= " " . ( "~" x length( $target_words[$i] ) );
+            next;
+        }
 
-			# construct error underlining
-			my $pos = 0;
+        my $diff = $input_words[$i] ^ $target_words[$i];
+        my @dpos;
+        push @dpos, [ $-[1], $+[1] - $-[1] ] while $diff =~ m{ ([^\x00]+) }xmsg;
 
-			for my $err (@dpos) {
-				# special check for de/het errors since otherwise you get "char 1 and 3 are wrong" when you type "het" for "de"
-				if( $input_words[$i] =~ m/de|het/i and $target_words[$i] =~ m/de|het/i ) {
-					$out .= "~" x length($input_words[$i]);
-					$out .= " ";
-					next WORD;
-				} else {
-					$out .= " " x ($err->[0] - $pos);
-					$out .= "~" x $err->[1];
-					$pos += $err->[0] + $err->[1];
-				}
-			}
+        if ( scalar @dpos > 0 ) {
 
-		} else {
-			# spaces, since it was correct
-			$out .= " " x length($target_words[$i]);
-		}
+            # construct error underlining
+            my $pos = 0;
 
-		# space for next word
-		$out .= " ";
-	}
-	
-	
-	return $out;
+            for my $err (@dpos) {
+
+                # special check for de/het errors since otherwise you get
+                # "char 1 and 3 are wrong" when you type "het" for "de"
+                if (    $input_words[$i] =~ m/de|het/i
+                    and $target_words[$i] =~ m/de|het/i )
+                {
+                    $out .= "~" x length( $input_words[$i] );
+                    $out .= " ";
+                    next WORD;
+                }
+                else {
+                    $out .= " " x ( $err->[0] - $pos );
+                    $out .= "~" x $err->[1];
+                    $pos += $err->[0] + $err->[1];
+                }
+            }
+
+        }
+        else {
+            # spaces, since it was correct
+            $out .= " " x length( $target_words[$i] );
+        }
+
+        # space for next word
+        $out .= " ";
+    }
+
+    return $out;
 }
 
 sub pick_a_card {
@@ -536,9 +543,9 @@ sub pick_a_card {
     print "Translate: \"$from\"\n";
     my $line = readline(*STDIN);
     chomp $line;
-	 
-	 my $underline = make_underline( $line, $to );
-	 print "$underline\n" if $underline ne "";
+
+    my $underline = make_underline( $line, $to );
+    print "$underline\n" if $underline ne "";
     print "$to\n";
     my $error = ( $line eq $to ) ? 0 : 1;
     exit $error;
@@ -563,7 +570,6 @@ else {
 }
 
 pick_a_card( $deck, $from_english );
-
 
 # ----------
 # notes
