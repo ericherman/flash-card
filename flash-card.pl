@@ -3,6 +3,19 @@ use strict;
 use warnings;
 
 my $sentences = [
+    [
+        'Ik zou mijn eigen whisky willen maken.' =>
+          'I would like to make my own whisky.'
+    ],
+    [
+        'Ik zou op en ballon safari willen gaan.' =>
+          'I would like to go on a balloon safari'
+    ],
+    [
+        'I zou naar de top van een rokende vulkaan om te klimmen' =>
+          'I would like to climb to the top of a smoking volcano'
+    ],
+
     [ 'Uit je dak!' => 'Crazy!' ],
     [
         'Wat doe je het liefst in je vrije tijd?' =>
