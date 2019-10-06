@@ -1,8 +1,16 @@
 #!/usr/bin/env perl
+# SPDX-License-Identifier: GPL-3.0-or-later
+# dutch/english flashcard program
+# Copyright (C) 2014, 2015, 2018, 2019 Eric Herman <eric@freesa.org>
+
 use strict;
 use warnings;
 
-my $sentences = [
+# dutch to english sentences may have more than one translation in either
+# direction, that's fine, the script handles that.
+my $nl_to_en = [
+
+    # misc_sentences from my friends
     [
         'Ik zou mijn eigen whisky willen maken.' =>
           'I would like to make my own whisky.'
@@ -344,13 +352,11 @@ my $sentences = [
     [ 'Zij doet het anders.'           => 'She does it differently.' ],
     [ 'De andere broek is rood'        => 'The other pants are red.' ],
     [ 'Hij is anders zo rustig'        => 'He is usually so quiet.' ],
-    [ 'De dokter woont ergens anders.' => 'The doctor lives somewhere else.' ]
+    [ 'De dokter woont ergens anders.' => 'The doctor lives somewhere else.' ],
 
-];
-
-# TODO: make sentences with these
-# NOTE(chris): these are in alphabetical order
-my $other_vocab = [
+    # TODO: make sentences with these
+    # NOTE(chris): these are in alphabetical order
+    # some other vocab
 
     [ 'bedenken'        => 'make up' ],
     [ 'begrijpen'       => 'understand' ],
@@ -430,11 +436,9 @@ my $other_vocab = [
     [ 'zingen'          => 'sing' ],
     [ 'zitten'          => 'sit' ],
     [ 'zoeken'          => 'search' ],
-    [ 'zwaar'           => 'heavy' ]
+    [ 'zwaar'           => 'heavy' ],
 
-];
-
-my $het_de = [
+    # some het vs de vocab
     [ 'het lichaam'     => 'the body' ],
     [ 'de buik'         => 'the belly' ],
     [ 'de maag'         => 'the stomach' ],        # part of the digestive tract
@@ -600,9 +604,8 @@ my $het_de = [
     [ 'het stuk'     => 'the piece' ],
     [ 'de meter'     => 'the meter' ],
     [ 'de brand'     => 'the fire' ],
-];
 
-my $too_easy = [
+    # some "too easy" but important words
     [ 'ja'    => 'yes' ],
     [ 'nee'   => 'no' ],
     [ 'klein' => 'small' ],
@@ -684,46 +687,56 @@ sub make_underline {
     return $out;
 }
 
-sub pick_a_card {
-    my ( $cards, $idx ) = @_;
+sub pick_a_translation {
+    my ( $translations, $from_english ) = @_;
 
-    $idx //= int( rand(2) );
+    $from_english //= int( rand(2) );
+    $from_english = $from_english ? 1 : 0;
+    my $from_idx = $from_english;
+    my $to_idx   = !$from_idx;
 
-    my $card_num = int( rand( scalar @$cards ) );
-    my $card     = $cards->[$card_num];
-    my $from     = $card->[ !!$idx ];               # force to idx 0 or 1
-    my $to       = $card->[ !$idx ];                # force to idx 0 or 1
+    my $from_to = {};
+    my $from;
+    my $to;
+
+    for my $translation (@$translations) {
+        $from = $translation->[$from_idx];
+        $to   = $translation->[$to_idx];
+
+        $from_to->{$from} //= [];
+        push @{ $from_to->{$from} }, $to;
+    }
+
+    my $idx         = int( rand( scalar @$translations ) );
+    my $translation = $translations->[$idx];
+    $from = $translation->[$from_idx];
 
     print "Translate: \"$from\"\n";
-    my $line = readline(*STDIN);
-    chomp $line;
+    my $input = readline(*STDIN);
+    chomp $input;
 
-    my $underline = make_underline( $line, $to );
-    print "$underline\n" if $underline ne "";
+    my $got_it  = 0;
+    my $options = $from_to->{$from};
+    for my $option (@$options) {
+        if ( $input eq $option ) {
+            $got_it = 1;
+            last;
+        }
+    }
+
+    $to = $options->[0];
+    if ( !$got_it ) {
+        my $underline = make_underline( $input, $to );
+        print "$underline\n" if $underline ne "";
+    }
     print "$to\n";
-    my $error = ( $line eq $to ) ? 0 : 1;
+
+    my $error = $got_it ? 0 : 1;
     exit $error;
 }
 
-my $deck;
-my $from_english = undef;
-
-my $rnd = int( rand(100) );
-if ( $rnd < 50 ) {
-    $deck = $sentences;
-}
-elsif ( $rnd < 80 ) {
-    $deck = $other_vocab;
-}
-elsif ( $rnd < 95 ) {
-    $from_english = 1;
-    $deck         = $het_de;
-}
-else {
-    $deck = $too_easy;
-}
-
-pick_a_card( $deck, $from_english );
+my $from_english = undef;    # parameterize?
+pick_a_translation( $nl_to_en, $from_english );
 
 # ----------
 # notes
