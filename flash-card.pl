@@ -11081,9 +11081,9 @@ sub pick_a_translation {
     my ( $translations, $from_english ) = @_;
 
     $from_english //= int( rand(2) );
-    $from_english = $from_english ? 1 : 0;
+    $from_english = ( $from_english > 0 ) ? 1 : 0;
     my $from_idx = $from_english;
-    my $to_idx   = !$from_idx;
+    my $to_idx = ( $from_idx == 0 ) ? 1 : 0;
 
     my $from_to = {};
     my $from;
