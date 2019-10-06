@@ -589,8 +589,9 @@ my $nl_to_en = [
     , # "juf" is female teacher. The male equivalent would be "meester" (master)
     [ 'de les'    => 'the lesson' ],
     [ 'de school' => 'the school' ],
-    [ 'het land'  => 'the country' ]
-    ,    # could also be "the land" (as an area, not a particular country)
+    [ 'het land'  => 'the country' ],
+    [ 'het land'  => 'the land' ]       # as an area, not a particular country)
+    ,
     [ 'de wereld'    => 'the world' ],
     [ 'het slot'     => 'the lock' ],
     [ 'de tent'      => 'the tent' ],
