@@ -12,6 +12,11 @@ my $nl_to_en = [
 
     # misc_sentences from my friends
     [
+        'De beste stuurlui staan aan wal.' =>
+          'The best helmsmen stand on the dock'
+    ],
+    [ 'De beste stuurlui staan aan wal.' => 'Being an armchair general.' ],
+    [
         'Ik zou mijn eigen whisky willen maken.' =>
           'I would like to make my own whisky.'
     ],
