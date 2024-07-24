@@ -11024,65 +11024,6 @@ my $nl_to_en = [
     ],
 ];
 
-sub make_underline {
-    my ( $input, $target ) = @_;
-
-    # split the input in words and create an error underline for every word
-    # if words are missing it'll give bad output, but whatev.
-
-    my @input_words  = split / /, lc($input);
-    my @target_words = split / /, lc($target);
-
-    my $out = "";
-  WORD:
-    for ( my $i = 0 ; $i < scalar @target_words ; $i++ ) {
-
-        # if the user input is missing words at the end, that's wrong
-        if ( $i >= scalar @input_words ) {
-            $out .= " " . ( "~" x length( $target_words[$i] ) );
-            next;
-        }
-
-        my $diff = $input_words[$i] ^ $target_words[$i];
-        my @dpos;
-        push @dpos, [ $-[1], $+[1] - $-[1] ] while $diff =~ m{ ([^\x00]+) }xmsg;
-
-        if ( scalar @dpos > 0 ) {
-
-            # construct error underlining
-            my $pos = 0;
-
-            for my $err (@dpos) {
-
-                # special check for de/het errors since otherwise you get
-                # "char 1 and 3 are wrong" when you type "het" for "de"
-                if (    $input_words[$i] =~ m/de|het/i
-                    and $target_words[$i] =~ m/de|het/i )
-                {
-                    $out .= "~" x length( $input_words[$i] );
-                    $out .= " ";
-                    next WORD;
-                }
-                else {
-                    $out .= " " x ( $err->[0] - $pos );
-                    $out .= "~" x $err->[1];
-                    $pos += $err->[0] + $err->[1];
-                }
-            }
-
-        }
-        else {
-            # spaces, since it was correct
-            $out .= " " x length( $target_words[$i] );
-        }
-
-        # space for next word
-        $out .= " ";
-    }
-
-    return $out;
-}
-
 sub pick_a_translation {
     my ( $translations, $from_english ) = @_;
 
@@ -11121,10 +11062,6 @@ sub pick_a_translation {
     }
 
     $to = $options->[0];
-    if ( !$got_it ) {
-        my $underline = make_underline( $input, $to );
-        print "$underline\n" if $underline ne "";
-    }
     print "$to\n";
 
     my $error = $got_it ? 0 : 1;
