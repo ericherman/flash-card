@@ -906,7 +906,8 @@ my $nl_to_en = [
     [ "Hoe komt het dat je dit niet weet?" => "How come you don't know this?" ],
     [ "Wat hij zei, is niet waar."         => "What he said is not true." ],
     [
-        "Waar een wil is, is een weg." => "Where there's a will, there's a way."
+        "Waar een wil is, is een weg." =>
+          "Where there's a will, there's a way."
     ],
     [ "Wat wil je met haar doen?"      => "What do you want to do to her?" ],
     [ "Hoe weet je dat?"               => "How do you know that?" ],
@@ -1160,7 +1161,7 @@ my $nl_to_en = [
     ],
     [ "Ik ben hier al twee uur." => "I have been here for two hours." ],
     [ "Het is voor één van mijn vrienden." => "It's for a friend of mine." ],
-    [ "Het is voor een van mijn vrienden."   => "It's for a friend of mine." ],
+    [ "Het is voor een van mijn vrienden." => "It's for a friend of mine." ],
     [
         "Ik wist het niet, dat hij daar was." =>
           "I didn't know that he was there."
@@ -2537,7 +2538,7 @@ my $nl_to_en = [
           "With all his money, he is not happy."
     ],
     [ "Hoe lang bent u?"       => "How tall are you?" ],
-    [ "Ik heb één zus."      => "I have one sister." ],
+    [ "Ik heb één zus."        => "I have one sister." ],
     [ "Ik begrijp het niet."   => "I do not understand." ],
     [ "Ik begrijp het niet."   => "I don't understand." ],
     [ "Wat is je antwoord?"    => "What's your answer?" ],
@@ -3070,10 +3071,10 @@ my $nl_to_en = [
         "Iedereen spreekt goed over hem." =>
           "He is well spoken of by everybody."
     ],
-    [ "Dat is een tafel."              => "That is a table." ],
-    [ "Dat is een tafel."              => "That's a table." ],
-    [ "Ik heb er niets mee te maken."  => "I have nothing to do with it." ],
-    [ "Laat het me één keer zeggen." => "Let me say this just once." ],
+    [ "Dat is een tafel."             => "That is a table." ],
+    [ "Dat is een tafel."             => "That's a table." ],
+    [ "Ik heb er niets mee te maken." => "I have nothing to do with it." ],
+    [ "Laat het me één keer zeggen."  => "Let me say this just once." ],
     [
         "Je ziet er goed uit in die kleren." =>
           "You look good in those clothes."
@@ -4664,8 +4665,7 @@ my $nl_to_en = [
           "Have you ever written a book?"
     ],
     [
-        "Ik heb twee broers en één zus." =>
-          "I have two brothers and a sister."
+        "Ik heb twee broers en één zus." => "I have two brothers and a sister."
     ],
     [
         "Ik heb twee broers en één zus." =>
@@ -6312,8 +6312,8 @@ my $nl_to_en = [
           "Not all children like apples."
     ],
     [ "Hij eet aan één stuk door." => "He eats non-stop." ],
-    [ "Pas op dat ge niet valt!"     => "Be careful not to fall." ],
-    [ "Wij zijn goede vrienden."     => "We are good friends." ],
+    [ "Pas op dat ge niet valt!"   => "Be careful not to fall." ],
+    [ "Wij zijn goede vrienden."   => "We are good friends." ],
     [
         "Neem contact op met haar als je vragen hebt." =>
           "Contact her if you have any questions."
@@ -6576,13 +6576,13 @@ my $nl_to_en = [
         "Ze zei hem uit de buurt te blijven van slechte vrienden." =>
           "She told him to keep away from bad friends."
     ],
-    [ "Vandaag is er geen les."           => "There's no class today." ],
+    [ "Vandaag is er geen les."          => "There's no class today." ],
     [ "Ik ben geïnteresseerd in muziek." => "I'm interested in music." ],
-    [ "Ik geef toe, ik had het mis."      => "I admit it. I was wrong." ],
-    [ "De deur is dicht."                 => "The door is closed." ],
-    [ "Ik heb het je dikwijls gezegd."    => "I've told you many times." ],
-    [ "Veel kinderen, veel handen."       => "More kids, more hands." ],
-    [ "Dat is best goed."                 => "That's pretty good." ],
+    [ "Ik geef toe, ik had het mis."     => "I admit it. I was wrong." ],
+    [ "De deur is dicht."                => "The door is closed." ],
+    [ "Ik heb het je dikwijls gezegd."   => "I've told you many times." ],
+    [ "Veel kinderen, veel handen."      => "More kids, more hands." ],
+    [ "Dat is best goed."                => "That's pretty good." ],
     [
         "Hij heeft hen lange tijd niet geschreven." =>
           "He hasn't written to them in a long time."
@@ -6918,8 +6918,8 @@ my $nl_to_en = [
         "De één zijn dood is de ander zijn brood." =>
           "One man's meat is another man's poison."
     ],
-    [ "Waar hebt ge pijn?"               => "Where do you have pain?" ],
-    [ "Deze dag is zondag."              => "This day is Sunday." ],
+    [ "Waar hebt ge pijn?"             => "Where do you have pain?" ],
+    [ "Deze dag is zondag."            => "This day is Sunday." ],
     [ "Er ligt één appel op de tafel." => "There is one apple on the desk." ],
     [
         "Eet je soep voor hij koud wordt." =>
@@ -7471,7 +7471,7 @@ my $nl_to_en = [
           "If I were you, I'd study harder."
     ],
     [ "Hebt ge een fototoestel?"        => "Do you have a camera?" ],
-    [ "Hij had één dochter."          => "He had one daughter." ],
+    [ "Hij had één dochter."            => "He had one daughter." ],
     [ "Hij schrijft mij eens per week." => "He writes me once a week." ],
     [ "Hij schrijft mij eens per week." => "He writes to me once a week." ],
     [ "Doe haar de groeten van me."     => "Send her my regards." ],
@@ -10023,7 +10023,7 @@ my $nl_to_en = [
         "Je moet niet kwaad spreken over andere jongens in zijn klas." =>
           "You must not speak ill of other boys in his class."
     ],
-    [ "Je bent echt niet dom."   => "You're really not stupid." ],
+    [ "Je bent echt niet dom." => "You're really not stupid." ],
     [ "Laten we er één nemen." => "Let's get one." ],
     [
         "Zodra hij alleen was, opende hij de brief." =>
@@ -10444,9 +10444,9 @@ my $nl_to_en = [
         "Enkele kinderen zijn op het gras aan het spelen." =>
           "Some children are playing on the grass."
     ],
-    [ "Ik hou van katten."         => "I like cats." ],
+    [ "Ik hou van katten."        => "I like cats." ],
     [ "Hij heeft vreemde ideeën." => "He has strange ideas." ],
-    [ "Ik hou van katten."         => "I love cats." ],
+    [ "Ik hou van katten."        => "I love cats." ],
     [
         "Ik kreeg problemen met de politie omdat ik te hard reed." =>
           "I got into trouble with the police for driving too fast."
@@ -11030,7 +11030,7 @@ sub pick_a_translation {
     $from_english //= int( rand(2) );
     $from_english = ( $from_english > 0 ) ? 1 : 0;
     my $from_idx = $from_english;
-    my $to_idx = ( $from_idx == 0 ) ? 1 : 0;
+    my $to_idx   = ( $from_idx == 0 ) ? 1 : 0;
 
     my $from_to = {};
     my $from;
